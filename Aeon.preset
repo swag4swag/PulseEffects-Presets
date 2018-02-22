@@ -12,7 +12,7 @@ tolerance = 1
 threshold = -50
 
 [apps_panorama]
-enabled = true
+enabled = false
 position = 0.0
 
 [apps_compressor]
