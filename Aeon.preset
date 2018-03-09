@@ -12,7 +12,7 @@ tolerance = 1
 threshold = -50
 
 [apps_panorama]
-enabled = true
+enabled = false
 position = 0.0
 
 [apps_compressor]
@@ -44,13 +44,13 @@ poles = 4
 
 [apps_equalizer]
 enabled = true
-input_gain = -13.300000000000001
+input_gain = -10.0
 output_gain = 0.0
 band0 = 3.0
 band1 = 4.0
 band2 = 3.0
 band3 = -1.0
-band4 = -2.0
+band4 = 0.0
 band5 = 2.0
 band6 = 3.0
 band7 = -3.0
@@ -89,7 +89,7 @@ band9_freq = 9000.0
 band10_freq = 9800.0
 band11_freq = 12000.0
 band12_freq = 20000.0
-band13_freq = 6900.0
+band13_freq = 20.0
 band14_freq = 7900.0
 band15_freq = 8000.0
 band16_freq = 8500.0
@@ -110,7 +110,7 @@ band0_qfactor = 0.75
 band1_qfactor = 0.5
 band2_qfactor = 0.5
 band3_qfactor = 1.0
-band4_qfactor = 0.5
+band4_qfactor = 1.0
 band5_qfactor = 1.0
 band6_qfactor = 1.5
 band7_qfactor = 1.0
@@ -119,7 +119,7 @@ band9_qfactor = 6.0
 band10_qfactor = 0.5
 band11_qfactor = 3.0
 band12_qfactor = 5.0
-band13_qfactor = 6.0
+band13_qfactor = 0.20000000000000001
 band14_qfactor = 8.0
 band15_qfactor = 10.0
 band16_qfactor = 2.0
@@ -179,12 +179,12 @@ blend = 0.0
 
 [apps_bass_enhancer]
 enabled = false
-input_gain = 0.0
+input_gain = -10.0
 output_gain = 0.0
-amount = 1.0
-harmonics = 8.5
+amount = 3.0
+harmonics = 0.10000000000000001
 scope = 100.0
-floor = 20.0
+floor = 15.0
 blend = 0.0
 
 [apps_delay]

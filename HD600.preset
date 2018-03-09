@@ -44,24 +44,24 @@ poles = 4
 
 [apps_equalizer]
 enabled = true
-input_gain = -13.300000000000001
+input_gain = -10.0
 output_gain = 0.0
-band0 = 6.0
+band0 = 4.0
 band1 = -2.0
-band2 = -3.0
-band3 = 1.0
-band4 = 4.0
-band5 = -3.0
-band6 = -4.0
-band7 = -3.0
-band8 = 3.0
-band9 = -4.0
-band10 = -4.0
-band11 = -4.0
-band12 = -6.0
-band13 = 5.0
-band14 = -5.0
-band15 = 4.0
+band2 = 0.0
+band3 = 0.0
+band4 = 0.0
+band5 = 0.0
+band6 = 0.0
+band7 = 0.0
+band8 = 0.0
+band9 = 0.0
+band10 = -5.0
+band11 = -5.0
+band12 = 5.0
+band13 = 0.0
+band14 = 0.0
+band15 = 0.0
 band16 = 0.0
 band17 = 0.0
 band18 = 0.0
@@ -87,12 +87,12 @@ band7_freq = 5600.0
 band8_freq = 6500.0
 band9_freq = 6800.0
 band10_freq = 7150.0
-band11_freq = 7100.0
-band12_freq = 8200.0
+band11_freq = 7500.0
+band12_freq = 8500.0
 band13_freq = 8500.0
 band14_freq = 9700.0
 band15_freq = 8400.0
-band16_freq = 16000.0
+band16_freq = 50.0
 band17_freq = 16000.0
 band18_freq = 5800.0
 band19_freq = 5555.0
@@ -117,12 +117,12 @@ band7_qfactor = 6.0
 band8_qfactor = 4.3200000000000003
 band9_qfactor = 5.0
 band10_qfactor = 8.0
-band11_qfactor = 7.0
-band12_qfactor = 10.0
+band11_qfactor = 4.0
+band12_qfactor = 8.0
 band13_qfactor = 4.0
 band14_qfactor = 6.0
 band15_qfactor = 2.0
-band16_qfactor = 5.0
+band16_qfactor = 0.59999999999999998
 band17_qfactor = 4.3200000000000003
 band18_qfactor = 10.0
 band19_qfactor = 5.0
@@ -174,18 +174,26 @@ output_gain = 0.0
 amount = 1.0
 harmonics = 8.5
 scope = 7500.0
-floor = 16000.0
+ceiling = 16000.0
 blend = 0.0
 
 [apps_bass_enhancer]
-enabled = false
-input_gain = 0.0
+enabled = true
+input_gain = -5.0
 output_gain = 0.0
-amount = 1.0
-harmonics = 8.5
-scope = 100.0
+amount = 3.0
+harmonics = 0.10000000000000001
+scope = 80.0
 floor = 20.0
-blend = 0.0
+blend = -10.0
+
+[apps_delay]
+enabled = false
+m_l = 0.0
+cm_l = 0.0
+m_r = 0.0
+cm_r = 0.0
+temperature = 20.0
 
 [apps_stereo_enhancer]
 enabled = false
@@ -213,6 +221,11 @@ amount2 = 0.0
 amount3 = 0.0
 filters = 2
 mono = false
+
+[apps_crossfeed]
+enabled = false
+fcut = 700
+feed = 4.5
 
 [apps_maximizer]
 enabled = false
@@ -248,13 +261,6 @@ threshold = 0.0
 ratio = 1.0
 knee = 3.25
 makeup = 0.0
-
-[mic_reverb]
-enabled = false
-room size = 0.5
-damping = 0.20000000000000001
-width = 1.0
-level = 0.5
 
 [mic_highpass]
 enabled = false
@@ -390,4 +396,20 @@ band26_type = 0
 band27_type = 0
 band28_type = 0
 band29_type = 0
+
+[mic_reverb]
+enabled = false
+room size = 0.5
+damping = 0.20000000000000001
+width = 1.0
+level = 0.5
+
+[mic_pitch]
+enabled = false
+cents = 0.0
+semitones = 0
+octaves = 0
+crispness = 3
+faster = false
+preserve_formant = false
 
