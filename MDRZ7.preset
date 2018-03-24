@@ -44,7 +44,7 @@ poles = 4
 
 [apps_equalizer]
 enabled = true
-input_gain = -10.0
+input_gain = -6.0
 output_gain = 0.0
 band0 = 5.0
 band1 = -7.0
