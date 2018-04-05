@@ -52,8 +52,8 @@ band2 = 8.0
 band3 = -3.0
 band4 = -8.0
 band5 = -3.0
-band6 = 0.0
-band7 = 0.0
+band6 = 4.0
+band7 = -2.0
 band8 = 0.0
 band9 = 0.0
 band10 = 0.0
@@ -82,8 +82,8 @@ band2_freq = 100.0
 band3_freq = 140.0
 band4_freq = 145.0
 band5_freq = 200.0
-band6_freq = 1400.0
-band7_freq = 2200.0
+band6_freq = 500.0
+band7_freq = 1200.0
 band8_freq = 600.0
 band9_freq = 12000.0
 band10_freq = 7500.0
@@ -179,12 +179,12 @@ blend = 0.0
 
 [apps_bass_enhancer]
 enabled = false
-input_gain = 0.0
+input_gain = -5.0
 output_gain = 0.0
-amount = 1.0
-harmonics = 8.5
-scope = 100.0
-floor = 20.0
+amount = 3.0
+harmonics = 0.10000000000000001
+scope = 85.0
+floor = 15.0
 blend = 0.0
 
 [apps_delay]
